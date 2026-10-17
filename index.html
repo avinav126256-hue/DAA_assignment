@@ -307,7 +307,7 @@ function renderIterStep() {
   } else {
     const closed = iterN * (iterN + 1) / 2;
     iterTotal.innerHTML = '<b>Base case reached:</b> T(' + iterN + ') = T(1) + (' + rangeText(iterN, iterStep) +
-      ') = 1 + ' + (sum - iterN) + ' = ' + closed + '&nbsp;&nbsp;&rArr;&nbsp;&nbsp; T(n) = n(n+1)/2 = &Theta;(n&sup2;)';
+      ') = 1 + ' + sum + ' = ' + closed + '&nbsp;&nbsp;&rArr;&nbsp;&nbsp; T(n) = n(n+1)/2 = &Theta;(n&sup2;)';
   }
 
   const capBox = document.getElementById('iterCaption');
